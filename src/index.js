@@ -15,7 +15,7 @@ class ErrorBoundary extends React.Component {
 
   render() {
     const { error } = this.state;
-    if (error) {
+    if (error !== null) {
       return (
         <div>
           <h1>Error occured in the child component!</h1>
